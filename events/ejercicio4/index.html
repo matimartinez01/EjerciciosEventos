@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex justify-center gap-x-10">
+    <div class="h-screen flex justify-center items-center">
+        <div class="h-[300px] w-[430px] border border-black p-2">
+            <form class="flex flex-col gap-y-10 w-full items-center text-center">
+                <div>
+                    <h1 class="font-bold">Moneda Local</h1>
+                    <p>Sin comas ni puntos</p>
+                    <input type="number" id="inputMoneda" class="h-[30px] w-[300px] border border-red-500">
+                </div>
+                <div>
+                    <h1 class="font-bold">Dolares</h1>
+                    <p>Sin comas ni puntos</p>
+                    <p id="dolares" class="h-[30px] w-[300px] border border-red-500"></p>
+                </div>
+                <input type="submit" class="bg-yellow-500 h-[50px] w-[200px]" id="botonCalcular" value="CALCULATE">
+            </form>
+        </div>
+    </div>
+
+    <div class="h-screen flex justify-center items-center">
+        <div class="h-[300px] w-[430px] border border-black p-2">
+            <form class="flex flex-col gap-y-10 items-center text-center">
+                <div>
+                    <h1 class="font-bold">Dolares</h1>
+                    <p>Sin comas ni puntos</p>
+                    <input type="number" id="inputDolares" class="h-[30px] w-[300px] border border-red-500">
+                </div>
+                <div>
+                    <h1 class="font-bold">Moneda Local</h1>
+                    <p>Sin comas ni puntos</p>
+                    <p id="monedaLocal" class="h-[30px] w-[300px] border border-red-500"></p>
+                </div>
+                <input type="submit" class="bg-yellow-500 h-[50px] w-[200px]" id="botonCalcularDolar" value="CALCULATE">
+            </form>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>

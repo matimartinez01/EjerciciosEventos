@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="h-screen flex justify-center items-center gap-x-10">
+        <div class="h-[300px] w-[430px] bg-red-200 ">
+            <form class="flex flex-col gap-y-10 items-center p-1">
+                <div>
+                    <h1>Estatura</h1>
+                    <p>En centimetros</p>
+                    <input type="number" id="inputEstatura" class="h-[30px] w-[300px] border border-red-500">
+                </div>
+                <div>
+                    <h1>Peso</h1>
+                    <p>En kilogramos</p>
+                    <input type="number" id="inputPeso" class="h-[30px] w-[300px] border border-red-500">
+                </div>
+                <input type="submit" class="bg-yellow-500 h-[50px] w-[200px]" id="botonCalcular" value="CALCULATE">
+            </form>
+        </div>
+            <div class="border border-black p-2">
+                <h1>Resultado</h1>
+                <p>Su indice de masa corporal es:</p>
+                <p id="indiceMasa" class="h-[30px] w-[300px] border border-red-500"></p>
+            </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
